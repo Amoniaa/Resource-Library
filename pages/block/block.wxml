@@ -1,0 +1,28 @@
+<!--pages/Personal/Personal.wxml-->
+
+<!--菜单-->
+
+<view class="category-left">
+	<scroll-view scroll-y="true" style="height:{{category.length*80}}rpx">
+		<block wx:for="{{category}}" wx:key="id">
+			<view class="catgegory-item {{activeId == item.id?'active-item':''}}" data-id="{{item.id}}" data-op="{{item.name}}" bindtap="clickItem"><text class="catgegory-item {{activeId == item.id?'active-text':''}}" data-id="{{item.id}}">{{item.name}}</text></view>
+		</block>
+	</scroll-view>
+</view>
+
+<view class="category-right">
+
+		<view class="categoty-detail">
+				<view class="catefory-main">
+					<view class="category-title" id="{{category[activeId-1].id}}">{{category[activeId-1].name}}</view>
+					<view class="category-content">
+						<view class="content-item" wx:for="{{category[activeId-1].options}}" wx:for-item="i" wx:key="id">
+							<view data-subop="{{i.text}}" bindtap="clicksubItem">
+								<text>{{i.text}}</text>
+							</view>
+						</view>
+					</view>
+				</view>
+		</view>
+	
+</view>

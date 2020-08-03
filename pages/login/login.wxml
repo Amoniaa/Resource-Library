@@ -1,0 +1,12 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <view class="input">
+    <input placeholder="手机号" placeholder-class='plas' bindinput='usernameInput' type='number'></input>
+  </view>
+  <view class="input">
+    <input placeholder="密码" placeholder-class='plas' bindinput='passwordInput' type='password'></input>
+  </view>
+  <button class="button" disabled="{{is_disabled}}" bindtap="login">登录</button>
+  
+</view>
+<text class="ins"  bindtap="signup">还没有账号，点我注册</text>

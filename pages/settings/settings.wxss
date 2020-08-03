@@ -1,0 +1,68 @@
+/* pages/settings/settings.wxss */
+
+.container {
+  margin-top: 20rpx;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 100rpx;
+  margin: 10rpx 10% 10rpx 10%;
+}
+
+.input {
+  padding: 20rpx;
+  margin: 15rpx;
+  width: 35%;
+  height: 40rpx;
+  border-radius: 15rpx;
+  background-color: #fff;
+}
+
+.title{
+  color: black;
+  border-radius: 15rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+  width: 100%;
+  background-color: #ccc;
+  font-size: 32rpx;
+
+}
+
+.button {
+  margin: 15rpx;
+  width: 20%;
+  height: 85rpx;
+  color: white;
+  background-color: #f76968;
+  border-radius: 15rpx;
+  line-height: 85rpx;
+}
+
+.ins{
+  color: black;
+  font-size: 28rpx;
+  margin: 30rpx 0 0 60rpx;
+  font-family: PingFangSC-regular;
+  position: absolute
+}
+
+.plas{
+  font-size: 30rpx;
+  color: #bbb;
+}
+
+.op0 {
+  opacity: 0;
+}

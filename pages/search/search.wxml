@@ -1,0 +1,27 @@
+<!--pages/search/search.wxml-->
+<form bindsubmit='searchSubmitFn'>
+  <view class="container2 fra">
+    <input value="{{searchValue}}" name='input' focus="true" placeholder="查找资源" placeholder-class="placeholder ml5" class='textinput frb ml2' maxlength='-1'>
+    </input><view class="bckg"></view>
+    <image src="../../images/icons/clear.png" class="icon5 clear z1000" bindtap="cleartext"></image>
+    <image src="../../images/icons/search1.png" class="icon6 ml2 mr2 z100" formType='submit'></image>
+    <button formType='submit' class='button frc'></button>
+  </view>
+</form>
+<!-- <view class="type fra">
+  <view class="title">查询方式 (点击右侧切换）</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker frc">
+      {{array[index]}}
+    </view>
+  </picker>
+</view> -->
+<view class='historyContent'>
+  <view class='history'>历史搜索：
+    <image src='../../images/icons/delete.png' class='icon4 ml2 mr2 mt2 mb2 delicon' bindtap='historyDelFn'></image>
+    <block wx:for="{{searchRecord}}" wx:key="name">
+      <view class='hisitem' class="item" bindtap="autoinput" data-hisitem="{{item.value}}">{{item.value}}</view>
+    </block>
+    <view class='none' wx:if="{{searchRecord.length==0}}">你还没有搜索记录</view>
+  </view>
+</view>

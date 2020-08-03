@@ -1,0 +1,85 @@
+<view class="bar fra">
+	<view class="button frc" bindtap='switch1' style="background-color:{{color1}}">全部评论</view>
+	<view class="button frc" bindtap='switch2' style="background-color:{{color2}}">我的评论</view>
+</view>
+<view class='scbg'>
+	<view class='box'>
+		<view class='firstblock'>
+			<image class='touxiang' src='{{face_url}}'></image>
+			<view class='person'>
+				<view class='name'>
+					<text class='showname'>{{username}}</text>
+				</view>
+				<view class='tel'>
+					<text class='showtime'>{{timestamp}}</text>
+				</view>
+			</view>
+		</view>
+		<view class='secondblock'>
+			<view class='description'>
+				<text class='content'>{{description}}</text>
+			</view>
+			<view class='url'>
+				<text class='url' selectable='true' bindtap='copyText' data-text="{{url}}">{{url}}</text>
+			</view>
+		</view>
+		<view class='thirdblock'>
+			<view class='class'>
+				<text class='classtext' selectable='true' >{{class}} > {{subclass}}</text>
+			</view>
+			<view class="function">
+				<view class='comment'>
+					<image class='like' src="../../images/icons/comment.png" id="{{itemName.resourceid}}"></image>
+					<text class='num'>{{total_comments}}</text>
+				</view>
+				<view class='collection'>
+					<image class='like' src='{{itemName.islike == 1?"/images/icons/collected.png":"/images/icons/collect.png"}}' bindtap="like" id='{{itemName.resourceid}}' data-id='{{itemName.resourceid}}'></image>
+					<text class='num'>{{total_collects}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="inline">
+		<textarea placeholder="在这里写下一条评论吧~" placeholder-class="plas" class='commentinput' maxlength='-1' bindinput="bindTextAreaCom" type='text'></textarea>
+		<image class='submit' src="../../images/icons/send.png" bindtap="sendcommit" id="{{itemName.resourceid}}"></image>
+	</view>
+	<block wx:for='{{comments}}' wx:for-item="itemName" wx:for-index="id" wx:key="key">
+		<view wx:if="{{mine}}" class='del' bindtap="delete" id='{{itemName.commentid}}' data-id='{{itemName.commentid}}'>删除</view>
+		<view wx:if="{{mine}}" class="box top">
+			<view class='firstblock'>
+				<image class='touxiang' src='{{itemName.face_url}}'></image>
+				<view class='person'>
+					<view class='name'>
+						<text class='showname'>{{itemName.username}}</text>
+					</view>
+					<view class='tel'>
+						<text class='showtime'>{{itemName.comment_timestamp}}</text>
+					</view>
+				</view>
+			</view>
+			<view class='secondblock'>
+				<view class='content'>
+					<text class='content1'>{{itemName.content}}</text>
+				</view>
+			</view>
+		</view>
+		<view wx:if="{{!mine}}" class="box">
+			<view class='firstblock'>
+				<image class='touxiang' src='{{itemName.face_url}}'></image>
+				<view class='person'>
+					<view class='name'>
+						<text class='showname'>{{itemName.username}}</text>
+					</view>
+					<view class='tel'>
+						<text class='showtime'>{{itemName.comment_timestamp}}</text>
+					</view>
+				</view>
+			</view>
+			<view class='secondblock'>
+				<view class='content'>
+					<text class='content1'>{{itemName.content}}</text>
+				</view>
+			</view>
+		</view>
+	</block>
+</view>

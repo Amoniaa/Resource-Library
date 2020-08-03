@@ -1,0 +1,192 @@
+/* pages/square/square.wxss */
+page {
+  height: 100%;
+}
+
+.add {
+    position: fixed;
+    bottom: 20rpx;
+    right: 20rpx;
+    z-index: 1000;
+    height: 125rpx;
+    width: 125rpx;
+}
+
+.container1 {
+  width: 100%;
+  height: 10%;
+  background-color: #f76767;
+  position: fixed;
+  z-index: 100;
+}
+
+.placeholder {
+  font-size: 32rpx;
+  color: #aaa;
+}
+
+.textinput {
+  padding-left: 30rpx;
+  height: 76rpx;
+  width: 85%;
+  border-radius: 38rpx;
+  background-color: #fff;
+}
+
+.scbg{
+  background-color: #ddd;
+  width: 94%;
+  padding: 2% 3% 2% 3%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+}
+
+.box{
+  width: 100%;
+  background-color: white;
+  margin: 2% 0 2% 0;
+  border-radius: 20rpx;
+}
+
+.firstblock{
+  height: 130rpx;
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.touxiang{
+  margin-top: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 15rpx;
+}
+
+.person{
+  width: 75%;
+  height: 130rpx;
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+}
+
+.name{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15rpx;
+  font-size: 40rpx;
+  flex-direction: row;
+}
+
+.tel{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15rpx;
+  flex-direction: row;
+}
+
+.description{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15rpx;
+  font-size: 40rpx;
+  flex-direction: row;
+}
+
+.url{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15rpx;
+  flex-direction: row;
+}
+
+.showname{
+  font-size: 34rpx;
+  color: #bb5151;
+  font-family: PingFangSC-regular;
+}
+
+.showtime{
+  font-size: 28rpx;
+  color: #aaa;
+  font-family: PingFangSC-regular;
+}
+
+.secondblock{
+  margin-top: 20rpx;
+  margin-left: 8%;
+  margin-right: 4%;
+  padding-bottom: 20rpx;
+}
+
+.content{
+  font-size: 30rpx;
+  color: #000;
+  word-break: break-all;
+  line-height: 45rpx;
+}
+
+.url{
+  font-size: 30rpx;
+  color: #1c1a9c;
+  word-break: break-all;
+  line-height: 45rpx;
+}
+
+.thirdblock{
+  height: 80rpx;
+  margin-left: 8%;
+  margin-right: 4%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.classtext{
+  font-size: 30rpx;
+  color: #bb5151;
+  word-break: break-all;
+  line-height: 80rpx;
+}
+
+.function {
+  height: 100rpx;
+  margin-left: 4%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.collection{
+  height: 100rpx;
+  margin-left: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.comment{
+  height: 100rpx;
+  margin-right: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.like{
+  margin: 20rpx 0 20rpx 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.num{
+  height: 50rpx;
+  line-height: 50rpx;
+  margin: 20rpx;
+  font-size: 30rpx;
+  color: #101010;
+}

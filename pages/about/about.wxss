@@ -1,0 +1,23 @@
+/* pages/about/about.wxss */
+page {
+  background-color: #ddd;
+}
+
+.title{
+  color: white;
+  border-radius: 15rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+  width: 200rpx;
+  margin: 10rpx;
+  background-color: #F76767;
+}
+
+.content{
+  background-color: white;
+  margin: 30rpx 40rpx 30rpx 40rpx;
+  padding: 35rpx;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  width: 80%;
+}

@@ -1,0 +1,43 @@
+/* pages/enroll/enroll.wxss */
+
+.container {
+  margin-top: 40rpx;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  padding: 20rpx;
+  margin: 15rpx;
+  width: 85%;
+  height: 40rpx;
+  border-radius: 15rpx;
+  background-color: #fff;
+}
+
+.button {
+  margin: 15rpx;
+  width: 90%;
+  height: 85rpx;
+  color: white;
+  background-color: #f76968;
+  border-radius: 15rpx;
+  line-height: 85rpx;
+}
+
+.ins{
+  color: black;
+  font-size: 28rpx;
+  margin: 30rpx 0 0 60rpx;
+  font-family: PingFangSC-regular;
+  position: absolute
+}
+
+.plas{
+  font-size: 30rpx;
+  color: #bbb;
+}

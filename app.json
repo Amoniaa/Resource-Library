@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/load/load",
+    "pages/about/about",
+    "pages/details/details",
+    "pages/me/me",
+    "pages/settings/settings",
+    "pages/mainpage/mainpage",
+    "pages/commit/commit",
+    "pages/block/block",
+    "pages/search/search",
+    "pages/searchresult/searchresult",
+    "pages/history/history",
+    "pages/collection/collection",
+    "pages/login/login",
+    "pages/enroll/enroll"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f76767",
+    "navigationBarTitleText": "资源菌",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#F76767",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "/images/icons/square_s.png",
+        "iconPath": "/images/icons/square.png",
+        "pagePath": "pages/mainpage/mainpage",
+        "text": "资源广场"
+      },
+      {
+        "selectedIconPath": "/images/icons/blocks_s.png",
+        "iconPath": "/images/icons/blocks.png",
+        "pagePath": "pages/block/block",
+        "text": "内容分区"
+      },
+      {
+        "selectedIconPath": "/images/icons/me_s.png",
+        "iconPath": "/images/icons/me.png",
+        "pagePath": "pages/me/me",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

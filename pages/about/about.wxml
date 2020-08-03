@@ -1,0 +1,7 @@
+<!--pages/about/about.wxml-->
+<view class="mt2">
+  <view class="fca" wx:for="{{introduction}}" wx:key="name">
+    <text class="title frc">{{item.title}}</text>
+    <text class="content">{{item.content}}</text>
+  </view>
+</view>

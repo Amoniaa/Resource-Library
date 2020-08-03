@@ -1,0 +1,49 @@
+ <!--pages/square/square.wxml-->
+ <image src="../../images/icons/add.png" class="add" bindtap="jumpcommit"></image>
+ <view class="container1 fra">
+ 	<view class='frb textinput' bindtap="jumpsearch">
+ 		<text class="placeholder">查找资源链接</text>
+ 		<image src="../../images/icons/search.png" class="icon5 ml2 mr2"></image>
+ 	</view>
+ </view>
+ <view class='scbg' scroll-y='true'>
+ 	<block wx:for="{{showdata}}" wx:for-item="itemName" wx:for-index="id" wx:key="key">
+ 		<view class='box'>
+ 			<view class='firstblock'>
+ 				<image class='touxiang' src='{{itemName.face_url}}'></image>
+ 				<view class='person'>
+ 					<view class='name'>
+ 						<text class='showname'>{{itemName.username}}</text>
+ 					</view>
+ 					<view class='tel'>
+ 						<text class='showtime'>{{itemName.send_timestamp}}</text>
+ 					</view>
+ 				</view>
+ 			</view>
+ 			<view class='secondblock'>
+ 				<view class='description'>
+ 					<text class='content'>{{itemName.description}}</text>
+ 				</view>
+ 				<view class='url'>
+ 					<text class='url' selectable='true' bindtap='copyText' data-text="{{itemName.url}}">{{itemName.url}}</text>
+ 				</view>
+ 			</view>
+ 			<view class='thirdblock'>
+ 				<view class='class'>
+ 					<text class='classtext' selectable='true' >{{itemName.class}} > {{itemName.subclass}}</text>
+ 				</view>
+ 				<view class="function">
+ 					<view class='comment'>
+ 						<image class='like' src="../../images/icons/comment.png" bindtap="jumpdetails" id="{{itemName.resourceid}}"></image>
+ 						<text class='num'>{{itemName.total_comments}}</text>
+ 					</view>
+ 					<view class='collection'>
+ 						<image class='like' src='{{itemName.islike == 1?"/images/icons/collected.png":"/images/icons/collect.png"}}' bindtap="like" id='{{itemName.resourceid}}' data-id='{{itemName.id}}'></image>
+ 						<text class='num'>{{itemName.total_collects}}</text>
+ 					</view>
+ 				</view>
+ 			</view>
+ 		</view>
+ 	</block>
+	 <view><text class="fcb mt2 gray mb2">—————— 已经到底啦 ——————</text></view>
+ </view>

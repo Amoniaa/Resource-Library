@@ -1,0 +1,97 @@
+/* pages/search/search.wxss */
+
+page {
+  height: 100%;
+}
+
+.picker {
+  height: 20rpx;
+  width: 180rpx;
+  padding: 14rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+}
+
+.type {
+  width: 100%;
+  height: 80rpx;
+  background-color: #74a3fa;
+}
+
+.title {
+  color: #fff;
+}
+
+.container2 {
+  width: 100%;
+  height: 9%;
+  background-color: #f76767;
+}
+
+.placeholder {
+  font-size: 32rpx;
+  height: 10rpx;
+  color: #aaa;
+}
+
+.textinput {
+  padding-left: 30rpx;
+  height: 76rpx;
+  width: 60%;
+  border-radius: 38rpx 0 0 38rpx;
+  background-color: #fff;
+}
+
+.bckg{
+  margin-left: -10rpx;
+  height: 76rpx;
+  width: 20%;
+  border-radius: 0 38rpx 38rpx 0;
+  background-color: #fff;
+}
+
+.button {
+  position: absolute;
+  top: 0;
+  right: 10rpx;
+  z-index: 1000;
+  opacity: 0;
+  width: 100rpx;
+  height: 10%;
+}
+
+.history {
+  background-color: #eee;
+  padding: 15rpx 80rpx 15rpx 15rpx;
+}
+
+.title {
+  position: relative;
+  top: 0;
+}
+
+.item {
+  display: inline-block;
+  margin: 5px 5px;
+  padding: 2px 8px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.none {
+  display: inline-block;
+  margin: 5px 5px;
+  padding: 2px 8px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.delicon {
+  position: absolute;
+  right: 10rpx;
+}
+
+.clear{
+  position:absolute;
+  right: 140rpx;
+}

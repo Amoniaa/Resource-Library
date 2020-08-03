@@ -1,0 +1,177 @@
+/**app.wxss**/
+page{
+  background-color: #ddd;
+}
+
+.f3{
+  font-size: 30rpx;
+}
+
+.inline{
+  display: inline-block;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ml1 {
+  margin-left: 10rpx;
+}
+
+.ml2 {
+  margin-left: 20rpx;
+}
+
+.mr2 {
+  margin-right: 20rpx;
+}
+
+.mt2 {
+  margin-top: 20rpx;
+}
+
+.mb2 {
+  margin-bottom: 20rpx;
+}
+
+.ml3 {
+  margin-left: 30rpx;
+}
+
+.mr3 {
+  margin-right: 30rpx;
+}
+
+.mt3 {
+  margin-top: 30rpx;
+}
+
+.mb3 {
+  margin-bottom: 30rpx;
+}
+
+.mt4 {
+  margin-top: 40rpx;
+}
+
+.fra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fca {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.frb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fcb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fre {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fce {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.frs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fcs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.frc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fcc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon3 {
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.icon4 {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.icon5 {
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.icon6 {
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.icon7 {
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.icon8 {
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.z100{
+  z-index: 100;
+}
+
+.z1000{
+  z-index: 1000;
+}
+
+.gray {
+  color: gray;
+}
+
+.red{
+  color: red;
+}
+
+.green{
+  color: green;
+}
+

@@ -1,0 +1,33 @@
+<!--pages/settings/settings.wxml-->
+
+<view class="container">
+	<view class="inline">
+		<text class="title frc">用户名修改:</text>
+	</view>
+	<view class="inline">
+		<text>用户名:</text>
+		<view class="input">
+			<input placeholder="{{user.username}}" placeholder-class='plas' bindinput='newusernameInput' type='text'></input>
+		</view>
+		<button class="button" disabled="{{is_disabled}}" bindtap="modifyusername">保存</button>
+	</view>
+	<view class="inline">
+		<text class="title frc">密码修改:</text>
+	</view>
+	<view class="inline">
+		<text>原密码:</text>
+		<view class="input">
+			<input placeholder="密码" placeholder-class='plas' bindinput='passwordInput' type='password'></input>
+		</view>
+		<button class="button op0" disabled="{{is_disabled}}"></button>
+	</view>
+	<view class="inline">
+		<text>新密码:</text>
+		<view class="input">
+			<input placeholder="密码" placeholder-class='plas' bindinput='newpasswordInput' type='password'></input>
+		</view>
+		<button class="button" disabled="{{is_disabled}}" bindtap="modifypassword">保存</button>
+	</view>
+
+
+</view>

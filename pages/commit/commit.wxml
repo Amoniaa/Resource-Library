@@ -1,0 +1,23 @@
+<!--pages/commit/commit.wxml-->
+<view class="container">
+	<textarea placeholder="在这里粘贴资源链接（和密码）" placeholder-class="plas" class='resourceinput' maxlength='-1' bindinput="bindTextAreaUrl"></textarea>
+	<textarea placeholder="在这里填写资源链接简介" placeholder-class="plas" class='textinput' maxlength='-1' bindinput="bindTextAreaDesc"></textarea>
+	<view class='radio'>
+		<text class="subtitle">一级分类（左右滑动选择）</text>
+		<view class='classify_list'>
+    <view  wx:for="{{category}}" wx:key="id">
+	<view class="catgegory-item {{activeId == item.id?'active-item':''}}" data-id="{{item.id}}" data-op="{{item.name}}" bindtap="clickItem"><text data-id="{{item.id}}">{{item.name}}</text></view>
+</view>
+    </view>
+		<view class="class">
+		</view>
+		<view class="subclass"><text class="subtitle">二级分类</text>
+			<view class="category-content">
+				<view style="display:inline-block;" wx:for="{{category[activeId-1].options}}" wx:for-item="i" wx:key="id">
+					<view class="content-item {{activesubId == i.id?'active-content-item':''}}" data-id="{{i.id}}" data-subop="{{i.text}}" bindtap="clicksubItem"><text>{{i.text}}</text></view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+	<button id='btn' class="button" bindtap="send">发布链接</button>

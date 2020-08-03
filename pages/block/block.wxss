@@ -1,0 +1,80 @@
+/* pages/Block/Block.wxss */
+page {
+  height: 100%;
+  background-color: #ddd;
+}
+
+
+
+/* 左侧菜单 */
+
+.container {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.category-left {
+  height: 100%;
+  width: 22%;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  background-color: #fd8282;
+  color: white;
+}
+
+.catgegory-item {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  text-align:  center;
+}
+
+.active-item {
+  width: 100%;
+  background-color: #f76767;
+  border-left: 12rpx white solid;
+}
+
+.active-text {
+  margin-left: -25rpx;
+  font-weight: bold;
+}
+
+.category-right {
+  width: 78%;
+  margin-left: 22%;
+}
+
+.category-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rpx;
+  padding-top: 110rpx;
+}
+
+.category-title {
+  text-align: center;
+  background-color: #bbb;
+  line-height: 100rpx;
+  font-size: 38rpx;
+  height: 100rpx;
+  margin-bottom: 10rpx;
+  width: 80%;
+  position: fixed;
+}
+
+.content-item {
+  display: inline-block;
+  flex-direction: column;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  height: 80rpx;
+  margin: 10rpx 20rpx 10rpx 20rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+}

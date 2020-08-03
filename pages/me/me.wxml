@@ -1,0 +1,50 @@
+<!--pages/Personal/Personal.wxml-->
+<view wx:if="{{!haslogin}}" class="login" bindtap="jumplogin">登录</view>
+<view wx:if="{{haslogin}}" class="login" bindtap="logout">注销</view>
+<view class='personalInf'>
+	<view class='deco'>
+		<open-data class='ava' type="userAvatarUrl"></open-data>
+	</view>
+	<view wx:if="{{haslogin}}" class="fcc">
+    <text class="nn">{{user.username}}</text>
+		<text class="nn">{{user.phone}}</text>
+    </view>
+    <view wx:if="{{!haslogin}}" bindtap="jumplogin"  class="fcc">
+    <text class="nn">（请登录）</text>
+		</view>
+</view>
+
+<view class='container2 fce'>
+	<view class="menu">
+		<view class="item frb" bindtap="jumphistory">
+			<view class="frs">
+				<image src="../../images/icons/rectangle.png" class="icon4 mr3"></image>
+				<text class="text">共享记录</text>
+			</view>
+			<image src="../../images/icons/right-arrow.png" class="small-icon"></image>
+		</view>
+		<view class="item frb" bindtap="jumpcollection">
+			<view class="frs">
+				<image src="../../images/icons/rectangle.png" class="icon4 mr3"></image>
+				<text class="text">我的收藏</text>
+			</view>
+			<image src="../../images/icons/right-arrow.png" class="small-icon"></image>
+		</view>
+
+		<view class="item frb" bindtap="jumpsettings">
+			<view class="frs">
+				<image src="../../images/icons/rectangle.png" class="icon4 mr3"></image>
+				<text class="text">账号设置</text>
+			</view>
+			<image src="../../images/icons/right-arrow.png" class="small-icon"></image>
+		</view>
+
+		<view class="item0 frb" bindtap="jumpabout">
+			<view class="frs">
+				<image src="../../images/icons/rectangle.png" class="icon4 mr3"></image>
+				<text class="text">关于我们</text>
+			</view>
+			<image src="../../images/icons/right-arrow.png" class="small-icon"></image>
+		</view>
+	</view>
+</view>
